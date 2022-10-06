@@ -1,0 +1,27 @@
+Map Reduce:
+1) Insert/Import documents
+2) Write a Map function which emits 2 common values
+3) Write a Reduce function which reduces those values
+4) Write a mongoDB query which calls Map and Reduce function and mention a collection where it stores
+5) Display output of the stored collection
+
+
+Replication:
+1) c mai data mai db mai db1 db2 db3 folder create kiaaa
+
+2) then : >mongod --port 27021 --dbpath c:\data\db\db1 --replSet testset 
+(this command for all members)
+
+3)new cmd mai : mongo --port 27021
+
+4)usme 
+rs.initiate()
+rs.add() baki dono member ka
+rs.status()
+
+
+Aggregation:
+1) Insert/Import documents
+2) Use match to get result of multiple values of a field at once
+{$match:{key:'value'}}
+3) Use group to aggregate where _id:'$field', variable:{$sum:"$field"}
