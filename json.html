@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <p>This is a paragraph</p>
+
+        <script>
+            const JSONstr = `{"name" : "Devashish Sule", "age" : "20", "email" : "devashish.sule@gmail.com"}`
+            
+            const JSONobj = {
+                name: "Devashish Sule",
+                age: 20,
+                gender: "male",
+                email: "devashish.sule@gmail.com"
+            }
+
+            const conversion = JSON.parse(JSONstr);
+            console.log(JSONstr)
+            console.log(conversion)
+
+        </script>
+    </body>
+</html>
