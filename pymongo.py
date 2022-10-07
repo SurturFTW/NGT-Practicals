@@ -16,3 +16,8 @@ doc1 = [{"name": "Labdya", "age": "19", "city": "Dombivli"},{"name": "Haggu", "a
 
 #insert docs
 collection.insert_many(doc1)
+print("Data inserted and stored...")
+
+#print collection data
+for i in collection.find():
+    print(i)
